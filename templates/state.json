@@ -1,0 +1,57 @@
+{
+  "project_name": "",
+  "artifact_type": "",
+  "artifact_status": "",
+  "current_stage": "intake",
+  "completed_stages": [],
+  "stages": [
+    "intake",
+    "artifact_audit",
+    "audience_strategy",
+    "claim_ledger",
+    "core_narrative",
+    "zh_content_pack",
+    "en_content_pack",
+    "visual_assets",
+    "launch_plan",
+    "integrity_review"
+  ],
+  "gate_status": {
+    "scientific_integrity": "pending",
+    "publication_rights": "pending",
+    "no_hype": "pending",
+    "final_approval": "pending"
+  },
+  "gate_status_legend": "pending | presented | approved | approved_with_changes | rejected",
+  "languages": ["zh", "en"],
+  "channels": [],
+  "requested_channels": {
+    "zh": [],
+    "en": []
+  },
+  "requested_channels_legend": "zh: wechat | institutional_news | group_share | video | zhihu | xiaohongshu; en: github | linkedin | bluesky | x | lay_summary; v0.1 aliases (wechat_article, bilibili_video, github_readme_release) are normalized on load",
+  "completed_channel_outputs": {},
+  "completed_channel_outputs_legend": "map of channel ID -> list of generated file paths",
+  "channel_review_status": {},
+  "channel_review_status_legend": "map of channel ID -> draft | reviewed | approved",
+  "platform_specific_risks": [],
+  "platform_specific_risks_item_shape": {
+    "channel": "",
+    "risk": "",
+    "status": "open | resolved | accepted_by_human"
+  },
+  "unverified_claims": [],
+  "unresolved_risks": [],
+  "file_status": {},
+  "file_status_legend": "map of output path -> draft | reviewed | approved; never downgrade approved without user consent",
+  "regeneration_log": [],
+  "regeneration_log_item_shape": {
+    "file": "",
+    "timestamp": "",
+    "reason": "",
+    "human_edits_preserved": true
+  },
+  "schema_version": "0.2",
+  "backward_compatibility_note": "state files without v0.2 fields (requested_channels, completed_channel_outputs, channel_review_status, platform_specific_risks, schema_version) are valid v0.1 states; treat missing fields as defaults and add them on next write",
+  "last_updated": ""
+}

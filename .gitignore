@@ -1,0 +1,15 @@
+# Generated communication content is not committed by default.
+# (Examples live under examples/, which IS committed.)
+output/*
+!output/.gitkeep
+
+# Local Claude Code permission settings (machine-specific)
+.claude/settings.local.json
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc

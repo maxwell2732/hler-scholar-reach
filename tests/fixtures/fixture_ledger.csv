@@ -1,0 +1,3 @@
+claim_id,source_file,source_location,original_evidence,normalized_claim,claim_type,confidence,allowed_language_zh,allowed_language_en,prohibited_language,qualifications,limitations,human_approval_required
+F01,fixture_source.md,line 1,X was associated with Y,X was associated with Y,observational_association,medium,与……相关,was associated with,caused; prevented; 导致,none,none,yes
+F02,fixture_source.md,line 2,prototype v0.1,tool is an early prototype,descriptive,high,早期原型,early-stage prototype,widely adopted; 成熟稳定,none,none,no

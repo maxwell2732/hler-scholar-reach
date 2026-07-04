@@ -1,0 +1,46 @@
+# Artifact Manifest — inventory of source materials, filled in during Stage 0.
+# Every downstream claim must trace back to an entry in this manifest.
+
+artifact_type: unknown        # paper | repository
+
+# ---- Paper fields (fill only for paper) ----
+paper:
+  title: unknown
+  authors: []                 # exact order as in the manuscript; do not reorder
+  corresponding_author: unknown
+  affiliations: []
+  status: unknown             # published | online_first | accepted | working_paper | preprint | report
+  venue: unknown              # journal / conference / series; unknown if not yet placed
+  doi: unknown                # only if it appears in the materials; NEVER invent
+  public_url: unknown
+  abstract_available: false
+  full_text_available: false
+  figures_available: []       # file names of figures the user provided
+  data_availability: unknown
+  funding_statement: unknown
+  embargo: unknown
+
+# ---- Repository fields (fill only for repository) ----
+repository:
+  name: unknown
+  url: unknown
+  license: unknown            # from LICENSE file only
+  latest_version: unknown     # from tags/CHANGELOG only
+  citation_file: false        # CITATION.cff present?
+  readme_langs: []            # e.g. [en] or [en, zh]
+  has_quick_start: false
+  has_examples: false
+  has_screenshots: false
+  known_limitations: []       # as stated in the repo docs
+  stars_forks_downloads: unknown  # only if user provides a screenshot/statement; never estimate
+
+# ---- Source inventory ----
+sources:
+  # - id: S01
+  #   path: paper/manuscript.pdf
+  #   kind: manuscript | abstract | readme | changelog | results_table | figure | website | user_statement
+  #   notes: ""
+  []
+
+# Facts stated directly by the user in conversation (each becomes a source of kind user_statement):
+user_statements: []

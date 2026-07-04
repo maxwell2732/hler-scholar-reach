@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use HLER Scholar Reach in your research communication workflow, please cite it as below."
+title: "HLER Scholar Reach: a human-in-the-loop skill for evidence-grounded, bilingual communication of academic papers and open-source research tools"
+type: software
+version: 0.2.0
+date-released: "2026-07-04"
+license: MIT
+repository-code: "https://github.com/maxwell2732/hler-scholar-reach"
+authors:
+  - family-names: "Zhu"
+    given-names: "Chen"
+    alias: "朱晨"
+    affiliation: "遗传社科研究 (Genetic Social Science Research)"
+keywords:
+  - science communication
+  - human-in-the-loop
+  - research dissemination
+  - claude-code-skill
+  - academic integrity
+  - bilingual
+abstract: >-
+  HLER Scholar Reach (v0.2, early-stage prototype) converts academic
+  papers, working papers, research reports, and open-source research
+  tools into reusable, audience-adapted bilingual (Chinese/English)
+  communication packages, while preserving scientific conclusions,
+  evidence boundaries, authorship, publication norms, and academic
+  integrity. AI prepares; humans approve and publish.

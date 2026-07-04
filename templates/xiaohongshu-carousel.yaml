@@ -1,0 +1,78 @@
+# Xiaohongshu carousel script — structured for future image generation.
+# Every card must fill ALL fields. role vocabulary:
+#   cover | pain_point | status_quo_gap | what_it_does | key_capability
+#   | how_to_use | limitation | access
+# The limitation card is REQUIRED (see references/academic-integrity.md 9.2/9.3).
+# headline: <= 15 chars recommended; body: <= 60 chars per card, mobile-first.
+# prohibited_implications: what the visual must NOT suggest
+#   (e.g. causal arrows for associations; maturity for prototypes).
+
+platform: xiaohongshu
+project: ""
+aspect_ratio: "3:4"
+card_count: 8
+cards:
+  - page: 1
+    role: cover
+    headline: ""
+    body: ""
+    suggested_visual: ""
+    claims_used: []
+    prohibited_implications: []
+    alt_text: ""
+  - page: 2
+    role: pain_point
+    headline: ""
+    body: ""
+    suggested_visual: ""
+    claims_used: []
+    prohibited_implications: []
+    alt_text: ""
+  - page: 3
+    role: status_quo_gap
+    headline: ""
+    body: ""
+    suggested_visual: ""
+    claims_used: []
+    prohibited_implications: []
+    alt_text: ""
+  - page: 4
+    role: what_it_does
+    headline: ""
+    body: ""
+    suggested_visual: ""
+    claims_used: []
+    prohibited_implications: []
+    alt_text: ""
+  - page: 5
+    role: key_capability
+    headline: ""
+    body: ""
+    suggested_visual: ""
+    claims_used: []
+    prohibited_implications: []
+    alt_text: ""
+  - page: 6
+    role: how_to_use
+    headline: ""
+    body: ""
+    suggested_visual: ""
+    claims_used: []
+    prohibited_implications: []
+    alt_text: ""
+  - page: 7
+    role: limitation
+    headline: ""
+    body: ""
+    suggested_visual: ""
+    claims_used: []
+    prohibited_implications: []
+    alt_text: ""
+  - page: 8
+    role: access
+    headline: ""
+    body: ""
+    suggested_visual: ""
+    claims_used: []
+    prohibited_implications: []
+    alt_text: ""

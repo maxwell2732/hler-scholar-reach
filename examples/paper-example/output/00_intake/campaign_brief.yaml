@@ -1,0 +1,43 @@
+# FICTIONAL EXAMPLE — campaign brief for the green-space working paper
+project_name: green-space-wellbeing
+display_name: "Urban Green Space and Self-Reported Well-being"
+artifact_type: paper
+artifact_status: working_paper
+
+languages: [zh, en]
+
+goals:
+  - academic_visibility
+  - scholarly_citation
+  - collaboration_discovery
+
+primary_audiences:
+  - same_field_scholars
+  - policy_researchers
+  - graduate_students
+
+channels_zh: [wechat_article, group_share]
+channels_en: [linkedin, bluesky, lay_summary]
+
+links:
+  canonical_url: https://example.edu/working-papers/green-space-wellbeing  # fictional
+  secondary_urls: []
+
+constraints:
+  embargo: none            # user confirmed: working paper series has no embargo
+  shareable_manuscript_version: working_paper
+  coauthors_informed: yes  # user statement, 2026-07-01
+  figure_reuse_rights: unknown
+
+timeline:
+  t0: T0
+  notes: "No date set; author waiting for co-author's travel to end."
+
+materials_provided:
+  - input/working_paper_abstract.md
+materials_missing:
+  - full manuscript (limits: cannot verify subgroup analysis details)
+  - figures (visual briefs will propose new graphics only)
+
+human_gate_questions:
+  - "Is the over-60 subgroup finding robust enough to communicate at all?"

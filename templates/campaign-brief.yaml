@@ -1,0 +1,49 @@
+# Campaign Brief — filled in during Stage 0 (Intake).
+# Values marked `unknown` must stay `unknown` until confirmed by files or by the user.
+# Never guess. `unknown` is always preferable to a fabricated value.
+
+project_name: ""              # short slug used for output/<project_name>/
+display_name: ""              # human-readable title of the paper or repo
+artifact_type: unknown        # paper | repository | unknown
+artifact_status: unknown      # paper: published | online_first | accepted | working_paper | preprint | report
+                              # repository: prototype | alpha | beta | stable | archived
+
+languages:                    # which content packs to produce
+  - zh
+  - en
+
+goals:                        # keep only the goals that actually apply; order by priority
+  - academic_visibility       # be seen by peers in the field
+  - scholarly_citation        # support future citation
+  - software_adoption         # get the tool used
+  - teaching_use              # adoption in courses
+  - collaboration_discovery   # find collaborators
+  - policy_or_public_communication
+  - personal_academic_positioning
+
+primary_audiences: []         # from references/audience-taxonomy.md, e.g. [same_field_scholars, graduate_students]
+
+channels_zh: []               # subset of: wechat, institutional_news, group_share, video, zhihu, xiaohongshu
+                              # (v0.1 aliases wechat_article / bilibili_video accepted, normalized on load)
+channels_en: []               # subset of: github, linkedin, bluesky, x, lay_summary
+                              # (v0.1 alias github_readme_release accepted)
+
+links:
+  canonical_url: unknown      # DOI / preprint URL / GitHub URL — the single main link
+  secondary_urls: []
+
+constraints:
+  embargo: unknown            # unknown | none | date (YYYY-MM-DD) — never assume "none"
+  shareable_manuscript_version: unknown  # e.g. preprint | accepted_manuscript | published_pdf | unknown
+  coauthors_informed: unknown # unknown | yes | no
+  figure_reuse_rights: unknown
+
+timeline:
+  t0: T0                      # keep symbolic (T0) unless the user gives a real date
+  notes: ""
+
+materials_provided: []        # list of input files actually available
+materials_missing: []         # list of what would improve quality (see missing_materials.md)
+
+human_gate_questions: []      # only questions that cannot be answered from materials
+                              # AND affect downstream correctness

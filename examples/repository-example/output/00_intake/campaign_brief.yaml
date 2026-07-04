@@ -1,0 +1,43 @@
+# FICTIONAL EXAMPLE — campaign brief for clean-panel
+project_name: clean-panel
+display_name: "clean-panel: audit and clean longitudinal survey data"
+artifact_type: repository
+artifact_status: prototype
+
+languages: [zh, en]
+
+goals:
+  - software_adoption      # framed as "early users and feedback", per prototype status
+  - teaching_use
+  - collaboration_discovery
+
+primary_audiences:
+  - target_discipline_researchers
+  - graduate_students
+  - open_source_contributors
+
+channels_zh: [group_share, bilibili_video]
+channels_en: [github_readme_release, x, bluesky]
+
+links:
+  canonical_url: https://example.com/fictional/clean-panel  # fictional
+  secondary_urls: []
+
+constraints:
+  embargo: none
+  shareable_manuscript_version: unknown   # n/a for repo
+  coauthors_informed: yes
+  figure_reuse_rights: unknown
+
+timeline:
+  t0: T0
+  notes: ""
+
+materials_provided:
+  - input/clean-panel-README.md
+materials_missing:
+  - real run screenshot (blocking for video script demo section)
+  - CHANGELOG beyond v0.2.0
+
+human_gate_questions:
+  - "The 50k-row limit: hard limit or just untested beyond that?"
