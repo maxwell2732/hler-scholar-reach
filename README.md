@@ -4,18 +4,13 @@
 
 ### 面向论文与开源科研工具的双语学术传播工作流
 
-**作者： 朱 晨 | 遗传社科研究 Chen Zhu | China Agricultural University (CAU)**  
+**作者： 朱 晨 | 遗传社科研究 Chen Zhu | China Agricultural University (CAU) + Fable 5**  
 **最后更新： 2026-07-04**
 
-[![Version](https://img.shields.io/badge/version-v0.2-1f6feb?style=flat-square)](CHANGELOG.md)
-[![Status](https://img.shields.io/badge/status-early%20prototype-d29922?style=flat-square)](#-项目概览)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Skill-8250df?style=flat-square&logo=anthropic&logoColor=white)](.claude/skills/scholar-reach/SKILL.md)
 [![Human in the Loop](https://img.shields.io/badge/Human--in--the--Loop-required-2da44e?style=flat-square)](#-human-gates)
 [![Bilingual](https://img.shields.io/badge/languages-中文%20%7C%20English-0ea5e9?style=flat-square)](README_EN.md)
 [![License](https://img.shields.io/badge/license-MIT-6e7781?style=flat-square)](LICENSE)
-
-[![GitHub Stars](https://img.shields.io/github/stars/maxwell2732/hler-scholar-reach?style=social)](https://github.com/maxwell2732/hler-scholar-reach/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/maxwell2732/hler-scholar-reach?style=social)](https://github.com/maxwell2732/hler-scholar-reach/forks)
 
 [![中文文档](https://img.shields.io/badge/Docs-中文-1f6feb?style=for-the-badge)](README.md)
 [![English README](https://img.shields.io/badge/Docs-English-6e7781?style=for-the-badge)](README_EN.md)
