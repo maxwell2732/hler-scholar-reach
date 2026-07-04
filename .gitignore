@@ -6,6 +6,10 @@ output/*
 # Local Claude Code permission settings (machine-specific)
 .claude/settings.local.json
 
+# Private source materials (papers, manuscripts, restricted data) —
+# never synced to GitHub
+papers/
+
 # OS / editor noise
 .DS_Store
 Thumbs.db
