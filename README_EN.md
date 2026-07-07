@@ -5,9 +5,10 @@
 ### A bilingual scholarly communication workflow for papers and open-source research tools
 
 **Author: 朱 晨 | 遗传社科研究 Chen Zhu | China Agricultural University (CAU) + Fable 5**  
-**Last updated: 2026-07-04**
+**Last updated: 2026-07-07**
 
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Skill-8250df?style=flat-square&logo=anthropic&logoColor=white)](.claude/skills/scholar-reach/SKILL.md)
+[![Codex](https://img.shields.io/badge/Codex-supported-111827?style=flat-square)](AGENTS.md)
 [![Human in the Loop](https://img.shields.io/badge/Human--in--the--Loop-required-2da44e?style=flat-square)](#-human-gates)
 [![Bilingual](https://img.shields.io/badge/languages-Chinese%20%7C%20English-0ea5e9?style=flat-square)](README.md)
 [![License](https://img.shields.io/badge/license-MIT-6e7781?style=flat-square)](LICENSE)
@@ -33,6 +34,7 @@ HLER Scholar Reach turns papers, working papers, research reports, and open-sour
 - [Quick Start](#-quick-start)
 - [Project Overview](#-project-overview)
 - [Workflow](#-workflow)
+- [Codex Support](#-codex-support)
 - [Human Gates](#-human-gates)
 - [Supported Artifacts and Channels](#-supported-artifacts-and-channels)
 - [Core Mechanisms](#-core-mechanisms)
@@ -55,12 +57,16 @@ HLER Scholar Reach turns papers, working papers, research reports, and open-sour
 git clone https://github.com/maxwell2732/hler-scholar-reach
 cd hler-scholar-reach
 
-# 2. Invoke the skill in Claude Code
+# 2A. Invoke the skill in Claude Code
 /scholar-reach
 
 # Natural-language requests also work
 # Generate a bilingual communication package for this paper.
 # Plan the launch and dissemination for this GitHub project.
+
+# 2B. Use it with Codex
+# Open this repository and describe the task. Codex reads AGENTS.md
+# and follows the same prompts, gates, references, and templates.
 
 # 3. Run the self-checks
 bash tests/test-structure.sh
@@ -77,11 +83,22 @@ Paper inputs may include a PDF, abstract, and results tables. For a GitHub proje
 | Artifacts | Papers, working papers, preprints, research reports, and GitHub repositories |
 | Chinese channels | WeChat, institutional news, group sharing, Bilibili/video, Zhihu, and Xiaohongshu |
 | English channels | GitHub, LinkedIn, Bluesky/X, and lay summaries |
+| Agent support | Claude Code Skill; Codex support through `AGENTS.md` using the same workflow |
 | Control layer | Claim Ledger plus four Human Gates |
 | Publishing model | Draft preparation and launch planning, followed by human review and manual publication |
 | Project status | v0.2, early-stage prototype, not yet systematically validated by external users |
 
 Common failures in scholarly communication include turning associations into causal claims, presenting a preprint as a published paper, describing an early prototype as a mature product, and inventing adoption or impact metrics. HLER Scholar Reach encodes checks for these risks in the workflow.
+
+## 🤖 Codex Support
+
+This repository supports both Claude Code and Codex. The Claude Code entry point is
+[`.claude/skills/scholar-reach/SKILL.md`](.claude/skills/scholar-reach/SKILL.md).
+The Codex entry point is [`AGENTS.md`](AGENTS.md).
+
+Both entry points use the same stages, Human Gates, claim ledger, channel rules, and output templates. In Codex, you can open this repository and describe the task directly, for example: "Generate a bilingual communication package for this paper" or "Read a GitHub repository and draft X and Xiaohongshu posts." Codex reads the relevant `prompts/`, `gates/`, `references/`, and `templates/` before generating or modifying content.
+
+Codex follows the same boundaries as the core workflow: it does not publish content, does not strengthen claims beyond the evidence, does not fabricate metrics, and does not modify a user's original paper, data, or target-project README while generating a communication package. Repository maintenance actions such as git commit, push, or release creation are performed only when the user explicitly asks for them.
 
 ## 🧭 Workflow
 
@@ -219,6 +236,7 @@ Authors may introduce their own project in the first person, for example, “We 
 
 ```text
 hler-scholar-reach/
+├── AGENTS.md                         # Codex support entry point
 ├── .claude/skills/scholar-reach/   # Claude Code skill entry point
 ├── prompts/                         # Stage 0–9 instructions
 ├── gates/                           # Four Human Gate procedures
@@ -247,6 +265,9 @@ Run the skill in Claude Code:
 ```text
 /scholar-reach
 ```
+
+In Codex, open this repository and describe the task directly. Codex reads
+[`AGENTS.md`](AGENTS.md) and follows the same workflow.
 
 You can also specify the artifact and channels in natural language:
 

@@ -38,6 +38,13 @@ constraints:
   coauthors_informed: unknown # unknown | yes | no
   figure_reuse_rights: unknown
 
+visual_requirements:
+  brand_visibility: true      # visuals should identify the artifact, not stay generic
+  required_text: []           # exact on-image text, e.g. project name or GitHub URL
+  required_link: unknown      # canonical URL or short URL to show on visual assets
+  platform_notes: []          # e.g. X: landscape social image; Xiaohongshu: 3:4 cover
+  avoid_generic_only: true    # avoid visuals that could describe any unrelated project
+
 timeline:
   t0: T0                      # keep symbolic (T0) unless the user gives a real date
   notes: ""
